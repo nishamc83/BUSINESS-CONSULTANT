@@ -1,0 +1,243 @@
+/* ============================= */
+/* GLOBAL STYLES */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #0a1f44; /* Navy */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+    background: #0a1f44;
+    padding: 15px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #cbd5e1;
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+    background: linear-gradient(rgba(10,31,68,0.8), rgba(10,31,68,0.8)),
+                url('../images/hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.btn-primary {
+    background: #0a1f44;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #132e63;
+}
+
+.btn-secondary {
+    background: #e5e7eb;
+    color: #0a1f44;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #d1d5db;
+}
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+/* ============================= */
+/* INDUSTRIES LIST */
+/* ============================= */
+
+.industry-list {
+    list-style: none;
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.industry-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ============================= */
+/* TESTIMONIAL */
+/* ============================= */
+
+.testimonial-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+/* ============================= */
+/* CTA SECTION */
+/* ============================= */
+
+.cta {
+    background: #0a1f44;
+    color: white;
+    text-align: center;
+}
+
+.cta h2 {
+    color: white;
+}
+
+.cta p {
+    color: #ddd;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+    background: #111827;
+    color: #ccc;
+    text-align: center;
+    padding: 100px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .navbar .container {
+        flex-direction: column;
+    }
+
+    .navbar a {
+        margin: 10px 0;
+    }
+}
